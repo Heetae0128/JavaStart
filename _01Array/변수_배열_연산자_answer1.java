@@ -50,6 +50,7 @@ public class 변수_배열_연산자_answer1 {
 		System.out.println(xA < xC && xC <= (xB-3) && (yB+3) <= yC && yC < yA);
 //		xA < xC <= xB-3
 //		yB+3 <= yC < yA
+
 		
 	
 		
