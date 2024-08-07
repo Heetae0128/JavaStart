@@ -49,7 +49,7 @@ public class _01_Q {
 		
 		int a = 10;
 		int b = 20;
-		int my = 15;
+		int my = 20;
 	
 		/**문제 a와 b는 도로의 길이이며 위치이다.
 		my는 나의 위치이다
@@ -75,30 +75,30 @@ public class _01_Q {
 		if (a - my > 0 || b - my > 0) {
 			System.out.println("a지점으로부터 " + ( my - a) + "만큼 떨어져 있습니다.");
 			}else {
-				System.out.println("b지점으로부터 " + ( my - b) + "만큼 떨어져 있습니다.");
+				System.out.println("b지점으로부터 " + ( b - my) + "만큼 떨어져 있습니다.");
 			}
 		
 		
 		
-		//up1
-		 if( a <= my && my <= b) {
-			 System.out.println("도로 위");
-		 }else {
-			 System.out.println("도로가 아님");
-		 }
-		//up2
-		 if( a <= my && my <= b) {
-			 System.out.println("도로 위");
-			 int distanceCenter = a+(b-a)/2;
-			 System.out.println(distanceCenter);
-			 if(my <= distanceCenter) {
-				 System.out.println("a로 부터 "+(my-a));
-			 }else {
-				 System.out.println("b로 부터 "+(b-my));
-			 }
-		 }else {
-			 System.out.println("도로가 아님");
-		 }
+//		//up1
+//		 if( a <= my && my <= b) {
+//			 System.out.println("도로 위");
+//		 }else {
+//			 System.out.println("도로가 아님");
+//		 }
+//		//up2
+//		 if( a <= my && my <= b) {
+//			 System.out.println("도로 위");
+//			 int distanceCenter = a+(b-a)/2;
+//			 System.out.println(distanceCenter);
+//			 if(my <= distanceCenter) {
+//				 System.out.println("a로 부터 "+(my-a));
+//			 }else {
+//				 System.out.println("b로 부터 "+(b-my));
+//			 }
+//		 }else {
+//			 System.out.println("도로가 아님");
+//		 }
 		
 		
 		}
