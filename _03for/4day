@@ -1,0 +1,58 @@
+for, while
+코드를 반복
+for(초기값;조건;증감식){
+}
+
+초기값;조건;증감식 다 쓰지 않아도 상관없다.
+
+초기값 = 변수선언
+증감식 = '++' '--'
+조건 = 참과거짓
+
+ex) for(int i=0; i<5; i++)-반복수행수{
+반복하려는}
+
+초기값 i=0
+조건판별 false > exit
+true > 반복문수행
+증감식 > 조건판별 (증감식의 조건만큼 반복)
+
+for(int i=0; i<3; i++){
+    sysout(i)}
+i=0;	i=1;	i=2;	i=3;
+0<3	1<3	2<3	3<3
+true	true	thru	faile
+실행	실행	실행	exit
+i=1;	i=2;	i=3;
+
+0
+1
+2
+
+for(int i=3; i>0; i--){
+    sysout(i)}
+
+i=3;	i=2;	i=1;	i=0;
+3>0	2>0	1>0	0>0
+true	true	thru	faile
+실행	실행	실행	exit
+i=2;	i=1;	i=0;
+
+for(int i=0; i<100;){
+    sysout(i)}
+
+i=0;
+0<100
+true
+실행
+무한루프
+
+for(int i=0; i<i+1; i++){
+    sysout(i)}
+
+i=0;	
+0>1	
+true	
+실행	
+i=1;	
+1씩증가하는 무한루프

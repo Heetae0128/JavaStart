@@ -9,7 +9,7 @@ public class _03_Q {
 		int enemyX = 10+5;
 		int enemyY = 20+6;
 		
-		if( )
+//		if( )		아직 100프로 모르겠음 일주일뒤 다시한번 풀어볼것. <2024-08-08>
 	}
 
 }
