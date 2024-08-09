@@ -20,9 +20,9 @@ true > 반복문수행
 for(int i=0; i<3; i++){
     sysout(i)}
 i=0;	i=1;	i=2;	i=3;
-0<3	1<3	2<3	3<3
+0<3		1<3		2<3		3<3
 true	true	thru	faile
-실행	실행	실행	exit
+실행		실행		실행		exit
 i=1;	i=2;	i=3;
 
 0
@@ -33,9 +33,9 @@ for(int i=3; i>0; i--){
     sysout(i)}
 
 i=3;	i=2;	i=1;	i=0;
-3>0	2>0	1>0	0>0
+3>0		2>0		1>0		0>0
 true	true	thru	faile
-실행	실행	실행	exit
+실행		실행		실행		exit
 i=2;	i=1;	i=0;
 
 for(int i=0; i<100;){
