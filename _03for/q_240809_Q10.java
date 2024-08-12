@@ -19,3 +19,21 @@ public class q_240809_Q10 {
 	}
 
 }
+
+	/**
+	 * 1. for문작성 i=0 i<arr.length i++
+	 * 	  i는 배여의 index 보겠다.
+	 * 2. 배열에서 가장큰값 2차! 시나리오 직접 수행
+	 * 				   3차! 가장큰값정보필요 (선언문)
+	 * 3. i의 value값과 최대값을 저장한 변수와 비교 arr(i)<max 최대값 변경
+	 * 
+	 * 
+	 * 2. int max=0;
+	 * 	  int maxIndex=-1;
+	 * 1. for(int i=0; i<arr.length; i++)
+	 * 3. if(arr[i] < max) {
+	 * 		max = arr(i);
+	 * }
+	 * 		sysout(max);
+	 * 		sysout(i)
+ 	 */
