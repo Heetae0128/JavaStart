@@ -1,6 +1,6 @@
 package _03for;
 
-public class up_10 {
+public class q_240808_Q10 {
 
 	public static void main(String[] args) {
 //		987654321이라는 숫자가 있다.. 변수2개와 for문 한개로

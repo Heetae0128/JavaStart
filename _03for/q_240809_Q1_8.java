@@ -1,6 +1,6 @@
 package _03for;
 
-public class q_240809 {
+public class q_240809_Q1_8 {
 
 	public static void main(String[] args) {
 		// 1. 100부터 999까지의 숫자중에서 홀수만 출력하시오.

@@ -2,7 +2,7 @@ package _03for;
 
 import java.util.Iterator;
 
-public class _00_Q {
+public class q_240806_Q {
 
 	public static void main(String[] args) {
 		// 문제 1

@@ -4,7 +4,7 @@ import javax.lang.model.type.IntersectionType;
 import javax.swing.AbstractCellEditor;
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
 
-public class _01_Q {
+public class q_240807_Q {
 
 	public static void main(String[] args) {
 		// 문제 1

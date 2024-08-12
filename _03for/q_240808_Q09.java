@@ -1,6 +1,6 @@
 package _03for;
 
-public class up_9 {
+public class q_240808_Q09 {
 
 	public static void main(String[] args) {
 // 		up 9
