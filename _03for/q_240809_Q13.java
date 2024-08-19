@@ -17,14 +17,14 @@ public class q_240809_Q13 {
 				cnt++;}
 			else {cnt=1;
 				bt=arr[i];}
-			//System.out.println(i+"/"+cnt);	// A
+			System.out.println(i+"/"+cnt);	// A
 			if(maxLength<cnt) {
 				maxLength=cnt;
 				maxIndex=bt;		// B
 			}
 		}
-		System.out.println(maxLength);
-		System.out.println(maxIndex);
+//		System.out.println(maxLength);
+//		System.out.println(maxIndex);
 	}
 }
 
