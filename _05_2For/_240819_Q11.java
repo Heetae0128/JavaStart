@@ -29,10 +29,8 @@ public class _240819_Q11 {
 			for(int j=7; j>i*2; j--) {
 				System.out.print("*");
 			}
-			System.out.println();
-			
+			System.out.println();			
 		}
-		
 	}
 }
 

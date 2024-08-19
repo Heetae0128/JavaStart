@@ -3,29 +3,27 @@ package _03for;
 public class q_240809_Q14 {
 
 	public static void main(String[] args) {
-	// 14. 가장 긴 터널의 알파벳 이름과 숫자를 찾으세요
-		 String ttt ="aabbbcccaaaaddbbbaaaaa";
-		 int bt = ttt.charAt(0);
-		 int maxCnt = 0;
-		 int maxNumber = 0;
-		 int cnt = 0;
-		 for(int i=0; i < ttt.length(); i++) {
-			 char a = ttt.charAt(i);{
-			 //System.out.println(a);
-				 if(a == bt) {
-					 cnt++;
-				 }else {
-					 cnt = 1;
-					 bt = ttt.charAt(i);}
-				 if(maxCnt < cnt) {
-					 maxCnt = cnt;
-					maxNumber=bt;
-				 }
-			 }
-			 System.out.println(maxCnt + "/" + (char)bt);
-			 
-		 }
+		String ttt = new String("aabbbcccaaaaddbbbaaaaa");
+		int cnt = 0;
+		char bT = ttt.charAt(0);
+		int maxCnt = 0;
+		char maxNumber;
+		for (int i = 0; i < ttt.length(); i++) {
+			if (bT == ttt.charAt(i)) {
+				cnt++;
+			} else {
+				bT = ttt.charAt(i);
+				cnt = 1;
+			}
+			if (maxCnt < cnt) { 
+				maxCnt = cnt;
+				maxNumber = bT;
+			}
+		}
+		System.out.println(maxCnt + "/" + bT); // 14번 문제 확인
+
 	}
+
 }
 
 	/** 
