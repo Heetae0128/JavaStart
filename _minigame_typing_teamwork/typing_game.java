@@ -31,6 +31,6 @@ public class typing_game {
 //		}
 		Random rr = new Random();
 		
-		System.out.println(eng[rr.nextInt(20)]);
+		System.out.println();
 	}
 }
