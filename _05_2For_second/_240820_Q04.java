@@ -34,11 +34,5 @@ public class _240820_Q04 {
 		}
 		
 		
-		System.out.println(b[0]);
-		System.out.println(b[1]);
-		System.out.println(b[2]);
-		System.out.println(b[3]);
-		System.out.println(b[4]);
-		System.out.println(b[5]);
 	}
 }

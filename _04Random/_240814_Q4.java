@@ -17,7 +17,7 @@ public class _240814_Q4 {
 			if(k1%7==0) {
 				System.out.println("행운의 숫자");
 				break;	
-			}else{k2*=k1;}
 			}
+		}
 	}
 }

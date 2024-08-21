@@ -15,9 +15,9 @@ public class _240820_Q05 {
 //		   (이때, 다음 주차번호에도 차량이 있으면 주차불가이다.)
 //
 //		   주차가 끝난 후 주차번호와 주차항 차량 번호를 출력하시오.
-		for(int i = 0; i < parking.length; i++) {
+		for(int i = 0; i <= parking.length-1; i++) {
 			System.out.println(parking[i]);
-			for(int j = i; j < parking.length; j++) {
+			for(int j = i; j <= parking.length-1; j++) {
 				if(carnum[i]%10>maxNum) {
 					
 				}
