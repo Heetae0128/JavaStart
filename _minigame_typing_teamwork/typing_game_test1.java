@@ -20,7 +20,7 @@ public class typing_game_test1 {
 
         System.out.println("--------타자 연습 게임--------");
         System.out.println("     1. 영문, 2. 한글 ");
-        System.out.print("     번호를 선택해주세요: ");
+        System.out.println("     번호를 선택해주세요 ");
         System.out.println();
         System.out.println();
         
@@ -31,7 +31,7 @@ public class typing_game_test1 {
         for (int i = 0; i < 10; i++) {
             String aaa = word[random.nextInt(numWord)];
             System.out.println("   타이핑 할 문제: " + aaa);
-            System.out.print("   입력하세요: ");
+            System.out.println("   입력하세요: ");
             String temp = scanner.next();
             if (temp.equals(aaa)) {
             	point+=10;
@@ -47,12 +47,13 @@ public class typing_game_test1 {
            
             
         }
-        if (point < 80)
+        if (point < 80) {
         System.out.println("    재도전하시겠습니까?");
     	System.out.println();
     	System.out.println();	
         // 스캐너 닫기
         scanner.close();
         System.out.println("  ( ͡° ͜ʖ ( ͡° ͜ʖ ( ͡° ͜ʖ ( ͡° ͜ʖ ͡°) ͜ʖ ͡°)ʖ ͡°)ʖ ͡°)");
+        }
     }
 }
