@@ -4,7 +4,7 @@ import java.awt.image.AreaAveragingScaleFilter;
 import java.util.Random;
 import java.util.Scanner;
 
-public class _09_Q {
+public class _10_Q_내가만든문제 {
 
 	public static void main(String[] args) {
 	//9. 키보드로 좌표를 입력하면, 좌표기준으로 왼쪽 또는 오른쪽으로 3개 이상의 연속된 숫자가
