@@ -11,7 +11,7 @@ public class _240911_Q2 {
 //		10  9   8   7   6
 //		5   4   3   2   1  
 		//문제 푸는 곳
-		for(int i=a.length-1; i>=0; i--) {
+		for(int i=0; i<a.length; i++) {
 			for(int j=a[0].length -1 ; j>=0; j--) {
 				 a[i][j] = num;
 				 num++;
