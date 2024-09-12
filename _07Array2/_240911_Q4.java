@@ -26,57 +26,65 @@ public class _240911_Q4 {
 		// 수열이 나온다 1 = 0 
 		//			 2,3 = 1
 		//			4,5,6 = 2
-		// 즉, 행과열이 더해졌을 때 0부터시작하여 8까지(조건? 하지만 8을 어떻게 표현할까..)
+		// 즉, 행과열이 더해졌을 때 0부터시작하여 7까지(조건? 하지만 7을 어떻게 표현할까..)
 		// 총 피라미드모양의 8개의 배열이 만들어진다?(이건 아닌것같다..)
 		// 행과 열을 좀 더 집중있게 생각해보자..
 		// 
-		for(int i = 0; i<a.length; i++) {
-			for(int j = 0; j<a[0].length; j++) {
-//				for(int k = 0; k <= 7; k++ ) {
-//					if(i+j==0) {
-//						a[i][j]=num;
-//						num++;
-//
-//					}
+		for(int k = 0; k<8; k++) {
+			for(int i = 0; i<a.length; i++) {
+				for(int j = 0; j<a[0].length; j++) {
+	//				for(int k = 0; k <= 7; k++ ) {
+					if(i+j==k) {
+						a[i][j]=num;
+						num++;
+
+					}
 				
-				if(i+j==0) {
-					a[i][j]=num;//1
-					num++;
-				}
-				if(i+j==1) {
-					a[i][j]=num;//2
-					num++;
-				}
-				if(i+j==2) {
-					a[i][j]=num;//3
-					num++;
-				}
-				if(i+j==3) {
-					a[i][j]=num;//4
-					num++;
-				}
-				if(i+j==4) {
-					a[i][j]=num;//5
-					num++;
-				}
-				if(i+j==5) {
-					a[i][j]=num;//5
-					num++;
-				}
-				if(i+j==6) {
-					a[i][j]=num;//5
-					num++;
-				}
-				if(i+j==7) {
-					a[i][j]=num;//5
-					num++;
-				}
+//				if(i+j==0) {
+//					a[i][j]=num;//1
+//					num++;
+//				}
+//				if(i+j==1) {
+//					a[i][j]=num;//2
+//					num++;
+//				}
+//				if(i+j==2) {
+//					a[i][j]=num;//3
+//					num++;
+//				}
+//				if(i+j==3) {
+//					a[i][j]=num;//4
+//					num++;
+//				}
+//				if(i+j==4) {
+//					a[i][j]=num;//5
+//					num++;
+//				}
+//				if(i+j==5) {
+//					a[i][j]=num;//5
+//					num++;
+//				}
+//				if(i+j==6) {
+//					a[i][j]=num;//5
+//					num++;
+//				}
+//				if(i+j==7) {
+//					a[i][j]=num;//5
+//					num++;
+//				}
 				
 //				}
-				System.out.print(a[i][j]+"\t");
-			}System.out.println();
+			
+			}
 		}
+			}
 		//배열 값 출력부
-		
+		for(int i=0; i<a.length; i++) {
+			for(int j=0; j<a[0].length; j++) {
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+			
 	}
 }
