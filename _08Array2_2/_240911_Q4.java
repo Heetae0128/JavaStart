@@ -37,7 +37,6 @@ public class _240911_Q4 {
 					if(i+j==k) {
 						a[i][j]=num;
 						num++;
-
 					}
 				
 //				if(i+j==0) {
@@ -72,12 +71,26 @@ public class _240911_Q4 {
 //					a[i][j]=num;//5
 //					num++;
 //				}
-				
+				 
 //				}
 			
+				}
 			}
 		}
-			}
+//		선생님 풀이
+//		for(int i=0; i<8; i++) {
+////			System.out.println(i+"번쨰 채우기를 합니다.");
+//			int newCol = i;
+//			for(int j=0; j<=i; j++) {
+//				if(j > 3) break;
+//				if(newCol < 5 ) {
+////				System.out.println("j<행>"+j+"/열"+newCol);
+//					a[j][newCol]=num++;
+//				}
+//				newCol--;
+//				
+//			}
+//		}
 		//배열 값 출력부
 		for(int i=0; i<a.length; i++) {
 			for(int j=0; j<a[0].length; j++) {
