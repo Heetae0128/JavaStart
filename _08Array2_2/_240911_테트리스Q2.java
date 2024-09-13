@@ -1,4 +1,4 @@
-package _07Array2;
+package _08Array2_2;
 
 public class _240911_테트리스Q2 {
 
