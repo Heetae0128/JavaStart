@@ -62,12 +62,7 @@ public class _240911_Q5 {
 //		colMin++;
 //		
 		
-		
-		
-		//할 수 있다.
-		//조금만 더 생각해보고 해보자.
-		//틀리지 않았
-		
+	
 		//배열 값 출력부
 		for(int i=0; i<a.length; i++) {
 			for(int j=0; j<a[0].length; j++) {
