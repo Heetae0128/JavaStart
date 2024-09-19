@@ -11,7 +11,7 @@ public class _240911_Q5 {
 		int colMax = 4;
 		
 		for(int j=0; j < 2; j++) {
-			for(int i=colMin; i <= colMax; i++) {
+			for(int i=colMin+1; i <= colMax; i++) {
 				a[rowMin][i]=num++;
 			}
 			//위 반복문이 완료되었다면 0번행은 채울 필요없다. < 저장되었으니
@@ -66,7 +66,7 @@ public class _240911_Q5 {
 		
 		//할 수 있다.
 		//조금만 더 생각해보고 해보자.
-		//틀리지 않았다.
+		//틀리지 않았
 		
 		//배열 값 출력부
 		for(int i=0; i<a.length; i++) {
