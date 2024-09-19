@@ -74,7 +74,7 @@ public class Parking_m {
 		System.out.println("주차번호를 입력해주세요.(0~6)");
 		parking.carNum = in.nextInt();
 		for(int i=0; i < userName.length; i++) {
-			if(i==i) {	
+			if(carNum==i) {	
 				userName[i].prt();
 				break;
 			}
