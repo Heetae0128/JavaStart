@@ -1,4 +1,4 @@
-package _11_Class_mission;
+package _10_Class_mission;
 
 
 import java.util.Scanner;
