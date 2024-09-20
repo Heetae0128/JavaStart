@@ -6,10 +6,11 @@ public class Trains {
 	String train = null;
 	String go_Time = null;
 	String temp = null;
+	String trainJ = null;
 	
 	public void prt() {
-		System.out.println("기차번호: "+t_Num);
-		System.out.println("기차시간: "+go_Time);
+		System.out.println(t_Num+"/"+go_Time+"/"+train);
+		System.out.println("--------------");
 	}
 }
 
