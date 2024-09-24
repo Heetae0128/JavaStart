@@ -16,13 +16,7 @@ public class Main1 {
 		}else {
 			System.out.println("비번틀림");
 		}
-		
-		String resultName2 = t.maskName("김나나");
-		if(resultName2!=null) {
-			System.out.println(resultName2);
-		}else {
-			System.out.println("이름을 제대로 입력해주세요.");
-		}
+		System.out.println(t.maskName("***"));
 	}
 
 }

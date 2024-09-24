@@ -10,7 +10,7 @@ public class selA {
 	public selA() {
 		int selNum = 0;
 		while (true) {
-			menu();
+			
 			selNum = in.nextInt();
 			in.nextLine();
 			if(selNum == 1) {

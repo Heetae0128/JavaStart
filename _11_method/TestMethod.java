@@ -26,13 +26,9 @@ public class TestMethod {
 	public String getName() {
 		return name;
 	}
-	String nickName = null;
-	String masking = "**";
-	public String maskName(String nicName) {
-		if(nicName.equals("김나나")) {
-			return nickName+masking;
-		}else {
-			return null;
-		}
+	public String maskName(String masking) {
+		String maskingName = name+masking;
+		return maskingName;				
 	}
+	
 }

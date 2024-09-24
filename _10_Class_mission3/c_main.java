@@ -7,5 +7,4 @@ public class c_main {
 	System.out.println("고객관리 및 이벤트관리 프로그램");	
 		new c_center();
 	}
-
 }
