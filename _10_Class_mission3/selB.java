@@ -8,18 +8,7 @@ public class selB {
 	Scanner in = new Scanner(System.in);
 	
 	public selB() {
-		int selNum = 0;
-		while (true) {
-			selNum = in.nextInt();
-			in.nextLine();
-			if(selNum == 1) {
-				addEvent();
-			}else if(selNum == 2) {
-				eventList();
-			}else if(selNum == 3) {
-				turn();
-			}
-		}
+		
 	}
 	// 1 클래스 분류
 		// 2 의존관계 파악 관련 변수 설정
@@ -32,6 +21,18 @@ public class selB {
 		System.out.println("2. 전체보기");
 		System.out.println("3. 돌아가기");
 		System.out.println("-- 번호 입력 --");
+		int selNum = 0;
+		while (true) {
+			selNum = in.nextInt();
+			in.nextLine();
+			if(selNum == 1) {
+				addEvent();
+			}else if(selNum == 2) {
+				eventList();
+			}else if(selNum == 3) {
+				turn();
+			}
+		}
 	}
 	public void addEvent() {	//이벤트추가
 		eventOne temp = new eventOne();

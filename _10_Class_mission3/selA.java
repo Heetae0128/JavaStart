@@ -8,6 +8,20 @@ public class selA {
 	Scanner in = new Scanner(System.in);
 	
 	public selA() {
+		
+	}
+	// 1 클래스 분류
+		// 2 의존관계 파악 관련 변수 설정
+		// 3 기능 분류
+		// 4 기능 디테일
+		// 5 시나리오 추가 기능,클래스 추가
+	public void menu() {	//메뉴
+		System.out.println("1. 고객가입");
+		System.out.println("2. 정보보기");
+		System.out.println("3. 수정");
+		System.out.println("4. 삭제");
+		System.out.println("5. 돌아가기");
+		System.out.println("-- 번호 입력 --");
 		int selNum = 0;
 		while (true) {
 			
@@ -26,19 +40,6 @@ public class selA {
 			}
 		}
 	}
-	// 1 클래스 분류
-		// 2 의존관계 파악 관련 변수 설정
-		// 3 기능 분류
-		// 4 기능 디테일
-		// 5 시나리오 추가 기능,클래스 추가
-	public void menu() {	//메뉴
-		System.out.println("1. 고객가입");
-		System.out.println("2. 정보보기");
-		System.out.println("3. 수정");
-		System.out.println("4. 삭제");
-		System.out.println("5. 돌아가기");
-		System.out.println("-- 번호 입력 --");
-	}
 	public void cAdd() {	//고객가입
 		c_one temp = new c_one();
 		Scanner in = new Scanner(System.in);
@@ -52,6 +53,7 @@ public class selA {
 				break;
 			}
 		}
+		temp=null;
 	}
 	public void cList() {	//고객리스트
 			for(int i = 0; i < c_len; i++) {

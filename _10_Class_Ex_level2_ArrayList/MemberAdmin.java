@@ -1,6 +1,5 @@
-package _10_Class_Ex_level2;
+package _10_Class_Ex_level2_ArrayList;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 //고객관리 클래스
@@ -9,7 +8,8 @@ public class MemberAdmin {
 	// MemberOne 객체의 주소값을 저장할 배열(길이 5)를 생성한 것이다.
 	// 배열도 객체입니다.. mlist는 참조변수이고 MemberOne객체의 주소를
 	// 저장한 배열의 주소를 저장하고 있다. 
-	ArrayList<MemberOne> mlist = new ArrayList<>();
+	MemberOne[] mlist = new MemberOne[5];
+	
 	MemberAdmin() {
 		//menu();
 	}
@@ -31,20 +31,15 @@ public class MemberAdmin {
 		}
 	}
 	public int duplexIDcheck(String id) {
-		for(int i = 0; i < mlist.size(); i++) {
-			if(mlist.get(i).id.equals(id)) {
-				return 1;
-			}
-		}
-//		for(int i=0; i < mlist.length; i++) {
-//			if(mlist[i]!=null) {
-//				if(mlist[i].id.equals(id)) {
-//					return 1;
+		for(int i=0; i < mlist.length; i++) {
+			if(mlist[i]!=null) {
+				if(mlist[i].id.equals(id)) {
+					return 1;
 					//return을 만나면 함수 종료되고 
 					//호출부로 이동 된다. break필요없음
-//				}
-//			}
-//		}
+				}
+			}
+		}
 		return 0;
 	}
 	private void addUser() {
@@ -60,25 +55,24 @@ public class MemberAdmin {
 			String name = in.nextLine();
 			temp.name=name;
 			
-//			for(int i=0; i < mlist.length; i++) {
-//				if(mlist[i]==null) {
-//					mlist[i]=temp;
-//					break;
-//				}
-//			}
-			mlist.add(temp);
+			for(int i=0; i < mlist.length; i++) {
+				if(mlist[i]==null) {
+					mlist[i]=temp;
+					break;
+				}
+			}
 		}		
 		temp=null;  // temp에 저장된 주소값이 필요없어서 null처리
 		// in.close(); // Scanner 에 필요한 자원 반납
 	}
 	private void allListUser() {
 		// TODO Auto-generated method stub
-		for(int i=0; i < mlist.size(); i++) {
-			mlist.get(i).prt();
+		for(int i=0; i < mlist.length; i++) {
+			if(mlist[i]!=null) {
+				mlist[i].prt();
+			}
 		}
-//		for(int i=0; i < mlist.size; i++) {
-//			if(mlist[i]!=null) {
-//				mlist[i].prt();
+		
 	}
 
 }
