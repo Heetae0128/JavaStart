@@ -17,7 +17,8 @@ public class ModMenu {
 			System.out.println("2. 단어 전체보기");
 			System.out.println("3. 단어 삭제하기");
 			System.out.println("4. 단어 수정하기");
-			System.out.println("5. 종료하기");
+			System.out.println("5. 랜덤타자게임");
+			System.out.println("6. 종료하기");
 			int	selNum = in.nextInt();
 			in.nextLine();
 			if(selNum==1) {
@@ -29,6 +30,8 @@ public class ModMenu {
 			}else if(selNum==4) {
 				wEdit();
 			}else if(selNum==5) {
+				wordsGame();
+			}else if(selNum==6) {
 				break;
 			}
 		}
@@ -73,9 +76,13 @@ public class ModMenu {
 		for(int i = 0; i < wordList.size(); i++) {
 			if(wordList.get(i).eng.equals(eng)) {
 				wordList.get(i).eng=engTemp;
-				
-				
 			}
 		}
 	}
+	
+	public void wordsGame() {
+		System.out.println("타자게임을 시작합니다.");
+		System.out.println("");
+	}
+	
 }
