@@ -1,0 +1,52 @@
+---------접근제어자---------
+
+Shop(project) 
+      - bin (*class) - 컴퓨터가 알아들을 수 있는 기계어
+      - src   -a (package) -m.java,k.java 
+      (*java) -b (package) -p.java
+
+
+예제)
+m.java
+
+K k = new K();
+
+k.name(가능)
+k.setName("a");(가능)
+
+
+k.java
+
+String name(k.java의 멤버변수) = null;
+public void setName(String n){
+	name = n;
+}
+
+멤버변수는 name
+
+지역변수는 n
+
+p.java
+
+K k = new k();
+
+k.name(불가능)
+k.setName("a");(가능)
+
+<접근제어자의 종류>
+
+default : package 내부에서 접근가능 (생략가능)
+public : 전체 접근가능
+prevate : 클래스 내부에서 접근가능
+protected 
+
+<접근제어자 사용 이유>
+
+-가장많이 사용하는 이유
+ 내부자원의 은닉화
+ dto자원을 은닉화
+ getter와 setter..?
+
+ 멤버변수, 메서드를 사용할때 은닉화의 유무를 잘 생각해보자.
+ 은닉의 사용을 전제로 시작하자
+ 내부의 자원을 보호하기 위함.

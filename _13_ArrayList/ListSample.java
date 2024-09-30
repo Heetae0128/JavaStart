@@ -1,6 +1,5 @@
 package _13_ArrayList;
 
-import java.security.PublicKey;
 import java.util.ArrayList;
 
 public class ListSample {
