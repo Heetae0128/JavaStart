@@ -37,7 +37,7 @@ k.setName("a");(가능)
 
 default : package 내부에서 접근가능 (생략가능)
 public : 전체 접근가능
-prevate : 클래스 내부에서 접근가능
+private : 클래스 내부에서 접근가능
 protected 
 
 <접근제어자 사용 이유>
@@ -50,3 +50,11 @@ protected
  멤버변수, 메서드를 사용할때 은닉화의 유무를 잘 생각해보자.
  은닉의 사용을 전제로 시작하자
  내부의 자원을 보호하기 위함.
+ 
+ (241002) 한번더 접근제어자에 대한 정리
+ 
+ 접근제어자
+ 정의 : 멤버변수 메서드 접근권한
+ 종류 : default public private
+ 사용한예 : DTO class getter setter
+ 
