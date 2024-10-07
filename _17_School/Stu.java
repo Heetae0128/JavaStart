@@ -3,6 +3,7 @@ package _17_School;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.util.Scanner;
 
 public class Stu {
 	private String id = null;
@@ -35,17 +36,13 @@ public class Stu {
 	}
 	public void abbbcc(){
 		try {
-			File file = new File("Output.txt");
+			Scanner in = new Scanner(System.in);
+			File file = new File("영단어.txt");
 			FileWriter write = new FileWriter(file,true);
 			BufferedWriter bufferedWriter = new BufferedWriter(write);
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write("  \n 바나나 \n");
-			
-			bufferedWriter.write(" my test");
+			System.out.println("저장하실 영단어를 입력해주세요.");
+			String words = in.nextLine();
+			bufferedWriter.write(words);
 			bufferedWriter.flush();
 			bufferedWriter.close();
 		} catch (Exception e) {

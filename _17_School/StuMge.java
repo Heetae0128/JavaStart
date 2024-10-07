@@ -13,14 +13,14 @@ public class StuMge {
 			System.out.println("2. 삭제");
 			System.out.println("3. 전체보기");
 			int selNum = in.nextInt();
-			Stu sibal = new Stu();
+			Stu si = new Stu();
 			in.nextLine();
 			if(selNum==1) {
 				add();
 			}else if(selNum==2) {
 				delete();
 			}else if(selNum==3) {
-				sibal.abbbcc();
+				si.abbbcc();
 			}else {
 				break;
 			}

@@ -7,72 +7,49 @@ import java.io.FileReader;
 import java.io.FileWriter;
 
 public class aa {
-
 	public static void main(String[] args) {
-		// TODO 자동 생성된 메소드 스텁
+		// TODO Auto-generated method stub
 		try {
 			File file = new File("Output.txt");
-			FileWriter write = new FileWriter(file);
-			BufferedWriter bufferedWriter = new BufferedWriter(write);
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write(" apple \n 사과 \n");
-			bufferedWriter.write("  \n 바나나 \n");
-			
+			FileWriter writer = new FileWriter(file);
+			BufferedWriter bufferedWriter = new BufferedWriter(writer);
+			bufferedWriter.write(" i love you \n i like you");
 			bufferedWriter.write(" my test");
 			bufferedWriter.flush();
 			bufferedWriter.close();
 		} catch (Exception e) {
-			e.getStackTrace();
+	            e.getStackTrace();
 		}
-		public void abbbcc(){
-			try {
-				File file = new File("Output.txt");
-				FileWriter write = new FileWriter(file,true);
-				BufferedWriter bufferedWriter = new BufferedWriter(write);
-				bufferedWriter.write(" apple \n 사과 \n");
-				bufferedWriter.write(" apple \n 사과 \n");
-				bufferedWriter.write(" apple \n 사과 \n");
-				bufferedWriter.write(" apple \n 사과 \n");
-				bufferedWriter.write(" apple \n 사과 \n");
-				bufferedWriter.write("  \n 바나나 \n");
-				
-				bufferedWriter.write(" my test");
-				bufferedWriter.flush();
-				bufferedWriter.close();
-			} catch (Exception e) {
-				e.getStackTrace();
-			}
-		}
+		
+		
 		try {
 			File file = new File("Output.txt");
-			FileWriter write = new FileWriter(file,true);
-			BufferedWriter bufferedWriter = new BufferedWriter(write);
+			FileWriter writer = new FileWriter(file,true);
+			BufferedWriter bufferedWriter = new BufferedWriter(writer);
 			bufferedWriter.write(" human");
 			bufferedWriter.flush();
 			bufferedWriter.close();
 		} catch (Exception e) {
-			e.getStackTrace();
+	            e.getStackTrace();
 		}
 		
-		try {
-			//파일 객체 생성
-			File file = new File("Output.txt");
-			//입력 스트림 생성
-			FileReader file_reader = new FileReader(file);
-			BufferedReader bufferedReader = new BufferedReader(file_reader);
+		try{
+	        //파일 객체 생성
+	        File file = new File("Output.txt");
+	         //입력 스트림 생성
+	        FileReader file_reader = new FileReader(file);
+	        BufferedReader bufferedReader = new BufferedReader(file_reader);
+	         
+	 		while(true) {
+	 			String line = bufferedReader.readLine(); 
+	 			if(line==null)break; 
+	 			System.out.println(line);
+	 		}
+	 		bufferedReader.close();
+		} catch(Exception e) {
 			
-				while (true) {
-					String line = bufferedReader.readLine();
-					if(line==null)break;
-					System.out.println(line);
-				}
-			bufferedReader.close();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+		}		
+
 	}
 
 }
