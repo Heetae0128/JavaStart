@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Scanner;
 
 public class MyFoodADM {
 	private Connection conn;
@@ -13,9 +14,29 @@ public class MyFoodADM {
 	
 	MyFoodADM(){
 		init();
-		insert();
-		select();
+		menu();
 	}
+	private void menu() {
+		while (true) {
+			Scanner in = new Scanner(System.in);
+			System.out.println("1. 등록");
+			System.out.println("2. 전체보기");
+			System.out.println("3. 삭제");
+			System.out.println("4. 수정");
+			int selNum = in.nextInt();
+			in.nextLine();
+			if(selNum == 1) {
+				insert();
+			}else if(selNum ==2) {
+				select();
+			}else if(selNum ==3) {
+				delete();
+			}else if(selNum ==4) {
+				alter();
+			}
+		}
+	}
+	
 	private void init(){
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -26,6 +47,7 @@ public class MyFoodADM {
 		}
 	}
 	private void insert(){	
+		conn = null;
 		MyFoodDTO mfd = new MyFoodDTO();
 		mfd.setName("알리오올리오");
 		mfd.setType("양식");
@@ -62,7 +84,7 @@ public class MyFoodADM {
 		}
 	}
 	private void select() {
-		
+		conn = null;
 		try {
 			conn = DriverManager.getConnection(
 					"jdbc:oracle:thin:@localhost:1521:orcl",	//주소?
@@ -83,7 +105,32 @@ public class MyFoodADM {
 				System.out.print("사유 : " + e.getMessage());
 		}
 	}
-//	private void delete() {
-//		
-//	}
+	private void delete() {
+		conn = null;
+		Scanner in = new Scanner(System.in);
+		try {
+			conn = DriverManager.getConnection(
+					"jdbc:oracle:thin:@localhost:1521:orcl",	//주소?
+					"system",		//id
+					"11111111");
+			System.out.println("데이터베이스 접속에 성공했습니다.");
+		} catch (SQLException e) {
+			// TODO 자동 생성된 catch 블록
+			e.printStackTrace();
+		}
+		int deptno = in.nextInt();
+		String sql = "delete from dept"+"where deptno"+deptno;
+		stmt = null;
+		try {
+			stmt = conn.createStatement();
+			int result = stmt.executeUpdate(sql);
+		}
+			catch (SQLException e) {
+			// TODO 자동 생성된 catch 블록
+			e.printStackTrace();
+			}
+	}
+	private void alter() {
+		
+	}
 }
