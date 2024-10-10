@@ -49,7 +49,7 @@ public class FishDAO {
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
-		return true;	// 커넥션 자원을 획득하지 못한 경우
+		return false;	// 커넥션 자원을 획득하지 못한 경우
 	}
 	
 	public FishDTO selecOne(String findId){

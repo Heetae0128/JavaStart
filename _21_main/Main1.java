@@ -1,6 +1,6 @@
 package _21_main;
 
-import IdeaMod.IdeaMod;
+import _21_service.IdeaMod;
 
 public class Main1 {
 

@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import IdeaDTO.IdeaDTO;
+import _21_dto.IdeaDTO;
 
 public class IdeaDAO {
 	
@@ -42,11 +42,12 @@ public class IdeaDAO {
 		try {
 			con = DriverManager.getConnection(url,username,password);
 			System.out.println("자원을 가져왔습니다.");
+			return true;
 		} catch (SQLException e) {
 			// TODO 자동 생성된 catch 블록
 			e.printStackTrace();
 		}
-		return true;
+		return false;
 	}
 	
 	public IdeaDTO selecOne(String findId) {
