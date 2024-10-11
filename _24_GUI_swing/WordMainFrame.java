@@ -4,12 +4,16 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.List;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
+import _22_dao.TempDAO;
+import _22_dto.TempDTO;
 
 public class WordMainFrame extends JFrame {
 	private JPanel title_p = new JPanel();  //컴포넌트&컨테이너. 
@@ -20,7 +24,11 @@ public class WordMainFrame extends JFrame {
 	private JPanel center_2 = new JPanel();
 	private JPanel center_3 = new JPanel();
 	
-	WordMainFrame(){
+	private List c22list = new List();
+	
+	private TempDAO tempdao = TempDAO.getInstance();
+	
+	public WordMainFrame(){
 		this.setBounds(100, 100, 500, 180);
 		title_p.add(t);
 		center_p.setBackground(Color.yellow);
@@ -58,7 +66,7 @@ public class WordMainFrame extends JFrame {
 		JPanel c22 = new JPanel();
 		c22.setLayout(new BorderLayout());
 		JLabel c22l = new JLabel("단어리스트");
-		List c22list = new List();
+		
 		JButton c22btn = new JButton("선택단어삭제");
 		c22.add(c22l,"North");
 		c22.add(c22list,"Center");
@@ -87,6 +95,13 @@ public class WordMainFrame extends JFrame {
 		
 		this.setVisible(true);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+	
+	private void DbList() {
+		ArrayList<TempDTO> tempdto = tempdao.selectAll();
+		for(TempDTO i : tempdto) {
+			c22list.add(i.getKo() + " / " + i.getEng());
+		}
 	}
 
 }
