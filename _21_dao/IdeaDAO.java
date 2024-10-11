@@ -149,6 +149,11 @@ public class IdeaDAO {
 			}
 		}
 	}
+	public void insert(IdeaDTO ideadto) {
+		
+	}
+	
+	
 	
 	public void add (IdeaDTO idto) {
 		if(con()) {
