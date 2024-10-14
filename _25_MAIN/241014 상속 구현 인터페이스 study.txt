@@ -1,0 +1,29 @@
+JFrame super class ( java awt,swing(package 에서 제공) )
+extends <상속>
+Mainframe sub class
+implements <구현>
+Action 인터페이스 (java에서 제공)
+- 이벤트동작 처리 기능 제공
+
+zooinfo에 string name과 eat()메소드를 가진 슈퍼클래스가 있고,
+tiger(dto)라는 sub클래스가 있다.
+implements를 받아보자 이것은 interface이다.
+인터페이스의 사용 유무
+의존도를 낮추기위해서!  > tiger가 외부 소스 수정에 최소한의 수정이 이루어지는것
+			수정이 많으면 의존도가 높은것
+인터페이스는 추상메서드만 사용 의존도를 낮추기위해
+
+public interface MemberDAO(){
+	public void add();
+	public void del();
+} 
+
+
+자바의 다형성
+
+tiger라는 클래스에 memberDAO m = new 구현받을 클래스명; 라고 객체를 생성하면
+m.구현받을클래스의 메소드를 사용가능  >  이말은 즉, 의존도를 낮추는것
+
+구현받을 클래스에는 상속과 같이 extends 타이핑 자리에 implements 타이핑 하면 된다.
+
+
