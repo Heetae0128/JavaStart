@@ -16,7 +16,7 @@ public class IdeaService {
 	public IdeaService() {
 		menu();
 	}
-	private void menu() {	
+	public void menu() {	
 		Scanner in = new Scanner(System.in);
 		boolean flag = true;
 		while(flag) {

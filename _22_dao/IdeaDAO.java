@@ -17,7 +17,7 @@ public class IdeaDAO {
 	private Connection conn = null; // 커넥션 자원 변수
 	
 	// 싱클톤 디자인 코딩 시작
-	public static IdeaDAO ideadao=null;
+	public static IdeaDAO ideadao;
 	private IdeaDAO() {
 		init();
 	}
