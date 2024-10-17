@@ -18,7 +18,7 @@ public class WordDAO implements DBdao{
 
 	@Override
 	public ArrayList<WordDTO> selectAll() {
-		ArrayList<WordDTO> w =new ArrayList<WordDTO>();
+		ArrayList<WordDTO> w = new ArrayList<WordDTO>();
 		WordDTO temp = new WordDTO();
 		temp.setEng("apple");
 		temp.setKor("사과");
